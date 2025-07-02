@@ -1,0 +1,228 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Input file name: muscle_pristimantis.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 632145
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 14 sequences with 1656 nucleotide sites
+Number of constant sites: 1118 (= 67.5121% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1118 (= 67.5121% of all sites)
+Number of parsimony informative sites: 351
+Number of distinct site patterns: 474
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM2+F+I          -5557.540   11179.080 +    0.474   11180.382 +    0.486   11352.269 +    0.735
+TIM2+F+G4         -5558.654   11181.308 +    0.156   11182.610 +     0.16   11354.498 +    0.241
+TIM2+F+I+G4       -5557.307   11180.613 +     0.22   11181.997 +    0.217   11359.215 -   0.0228
+GTR+F+I           -5557.396   11182.793 +   0.0741   11184.261 +   0.0699   11366.806 - 0.000513
+GTR+F+G4          -5558.634   11185.268 -   0.0215   11186.736 -   0.0203   11369.282 - 0.000149
+GTR+F+I+G4        -5557.290   11184.581 -   0.0303   11186.136 -   0.0274   11374.006 -  1.4e-05
+GTR+F+I+R2        -5556.712   11185.425 -   0.0199   11187.070 -   0.0171   11380.263 - 6.13e-07
+GTR+F+R2          -5566.555   11203.110 - 2.87e-06   11204.665 - 2.59e-06   11392.535 - 1.33e-09
+GTR+F+I+R3        -5556.407   11188.813 -  0.00365   11190.646 -  0.00287   11394.475 - 5.03e-10
+GTR+F+R3          -5560.391   11194.783 - 0.000185   11196.521 - 0.000152   11395.033 - 3.81e-10
+TN+F+G4           -5588.173   11238.347 - 6.41e-14   11239.568 - 6.83e-14   11406.124 - 1.49e-12
+TN+F+I            -5588.242   11238.485 - 5.98e-14   11239.707 - 6.37e-14   11406.262 - 1.39e-12
+TN+F+I+G4         -5586.923   11237.846 - 8.23e-14   11239.148 - 8.43e-14   11411.036 - 1.27e-13
+TIM+F+G4          -5588.056   11240.112 - 2.65e-14   11241.414 - 2.71e-14   11413.301 - 4.11e-14
+TIM+F+I           -5588.064   11240.127 - 2.63e-14   11241.429 - 2.69e-14   11413.316 - 4.08e-14
+TIM3+F+G4         -5588.166   11240.333 - 2.37e-14   11241.634 - 2.43e-14   11413.522 - 3.68e-14
+TIM3+F+I          -5588.234   11240.468 - 2.22e-14   11241.770 - 2.27e-14   11413.657 - 3.44e-14
+TIM+F+I+G4        -5586.744   11239.489 - 3.62e-14   11240.872 - 3.56e-14   11418.090 - 3.75e-15
+TIM3+F+I+G4       -5586.918   11239.837 - 3.04e-14   11241.220 - 2.99e-14   11418.438 - 3.15e-15
+TPM2u+F+I         -5602.798   11267.597 - 2.85e-20   11268.818 - 3.04e-20   11435.374 - 6.61e-19
+TPM2u+F+G4        -5604.655   11271.310 - 4.45e-21   11272.532 - 4.75e-21   11439.087 - 1.03e-19
+TPM2u+F+I+G4      -5604.570   11273.141 - 1.78e-21   11274.442 - 1.83e-21   11446.330 - 2.76e-21
+TVM+F+I           -5602.795   11271.591 - 3.87e-21   11272.974 - 3.81e-21   11450.192 - 4.01e-22
+TIM2e+I           -5618.880   11295.761 - 2.18e-26   11296.831 - 2.51e-26   11452.713 - 1.14e-22
+TVM+F+G4          -5604.619   11275.239 - 6.24e-22   11276.622 - 6.14e-22   11453.840 - 6.47e-23
+TIM2e+G4          -5622.431   11302.862 - 6.27e-28   11303.932 - 7.21e-28   11459.814 - 3.26e-24
+TVM+F+I+G4        -5604.552   11277.104 - 2.46e-22   11278.572 - 2.32e-22   11461.117 -  1.7e-24
+TIM2e+I+G4        -5621.143   11302.286 - 8.36e-28   11303.431 - 9.26e-28   11464.651 -  2.9e-25
+SYM+I             -5618.702   11299.404 - 3.53e-27   11300.626 - 3.77e-27   11467.181 -  8.2e-26
+SYM+G4            -5622.433   11306.867 - 8.46e-29   11308.089 - 9.03e-29   11474.644 - 1.96e-27
+HKY+F+G4          -5627.690   11315.380 -  1.2e-30   11316.525 - 1.33e-30   11477.745 - 4.17e-28
+SYM+I+G4          -5621.079   11306.157 - 1.21e-28   11307.459 - 1.24e-28   11479.346 - 1.87e-28
+HKY+F+I           -5629.667   11319.334 - 1.66e-31   11320.478 - 1.84e-31   11481.699 - 5.77e-29
+K3Pu+F+G4         -5627.535   11317.070 - 5.15e-31   11318.292 - 5.49e-31   11484.847 -  1.2e-29
+TPM3u+F+G4        -5627.640   11317.280 - 4.64e-31   11318.501 - 4.95e-31   11485.057 - 1.08e-29
+HKY+F+I+G4        -5627.855   11317.710 - 3.74e-31   11318.932 - 3.99e-31   11485.487 - 8.68e-30
+K3Pu+F+I          -5629.467   11320.933 - 7.47e-32   11322.155 - 7.96e-32   11488.710 - 1.73e-30
+TPM3u+F+I         -5629.642   11321.284 - 6.27e-32   11322.505 - 6.68e-32   11489.061 - 1.45e-30
+K3Pu+F+I+G4       -5627.660   11319.320 - 1.67e-31   11320.621 - 1.71e-31   11492.509 - 2.59e-31
+TPM3u+F+I+G4      -5627.818   11319.637 - 1.43e-31   11320.938 - 1.46e-31   11492.826 - 2.21e-31
+TPM2+I            -5679.733   11415.466 - 2.22e-52   11416.465 - 2.64e-52   11567.007 - 1.72e-47
+TNe+I             -5683.051   11422.101 - 8.03e-54   11423.099 - 9.58e-54   11573.642 - 6.25e-49
+TPM2+G4           -5683.443   11422.886 - 5.43e-54   11423.884 - 6.47e-54   11574.426 - 4.22e-49
+TNe+G4            -5685.272   11426.544 - 8.71e-55   11427.542 - 1.04e-54   11578.084 - 6.78e-50
+TIMe+I            -5682.710   11423.420 - 4.15e-54   11424.490 - 4.78e-54   11580.372 - 2.16e-50
+TIM3e+I           -5683.058   11424.117 - 2.93e-54   11425.187 - 3.37e-54   11581.069 - 1.52e-50
+TPM2+I+G4         -5683.218   11424.435 -  2.5e-54   11425.505 - 2.88e-54   11581.388 -  1.3e-50
+TVMe+I            -5679.687   11419.374 - 3.14e-53   11420.518 - 3.48e-53   11581.739 - 1.09e-50
+TNe+I+G4          -5683.983   11425.967 - 1.16e-54   11427.037 - 1.34e-54   11582.919 - 6.05e-51
+TIMe+G4           -5685.032   11428.064 - 4.07e-55   11429.135 - 4.68e-55   11585.017 - 2.12e-51
+TIM3e+G4          -5685.299   11428.598 - 3.12e-55   11429.668 - 3.59e-55   11585.551 - 1.62e-51
+GTR+F             -5671.271   11408.541 - 7.07e-51   11409.925 - 6.95e-51   11587.143 - 7.32e-52
+TVMe+G4           -5683.407   11426.814 - 7.61e-55   11427.958 - 8.44e-55   11589.178 - 2.64e-52
+TIMe+I+G4         -5683.666   11427.331 - 5.88e-55   11428.476 - 6.51e-55   11589.696 - 2.04e-52
+TIM3e+I+G4        -5683.999   11427.997 - 4.21e-55   11429.142 - 4.67e-55   11590.362 - 1.46e-52
+TVMe+I+G4         -5683.198   11428.395 - 3.45e-55   11429.617 - 3.68e-55   11596.172 - 8.01e-54
+K2P+I             -5744.390   11542.780 - 5.01e-80   11543.709 - 6.18e-80   11688.909 - 5.84e-74
+K2P+G4            -5746.975   11547.951 - 3.77e-81   11548.879 - 4.66e-81   11694.079 -  4.4e-75
+K3P+I             -5743.903   11543.806 -    3e-80   11544.804 - 3.58e-80   11695.346 - 2.33e-75
+TPM3+I            -5744.374   11544.748 - 1.87e-80   11545.746 - 2.23e-80   11696.288 - 1.46e-75
+K3P+G4            -5746.550   11549.099 - 2.13e-81   11550.097 - 2.53e-81   11700.640 - 1.65e-76
+K2P+I+G4          -5746.853   11549.705 - 1.57e-81   11550.703 - 1.87e-81   11701.246 - 1.22e-76
+TPM3+G4           -5746.937   11549.873 - 1.44e-81   11550.871 - 1.72e-81   11701.414 - 1.12e-76
+K3P+I+G4          -5746.391   11550.782 - 9.16e-82   11551.853 - 1.05e-81   11707.735 - 4.76e-78
+TPM3+I+G4         -5746.821   11551.643 - 5.96e-82   11552.713 - 6.86e-82   11708.595 -  3.1e-78
+F81+F+I           -5818.827   11695.654 - 3.19e-113   11696.724 - 3.67e-113   11852.607 - 1.66e-109
+F81+F+G4          -5823.732   11705.464 - 2.36e-115   11706.534 - 2.72e-115   11862.416 - 1.23e-111
+F81+F+I+G4        -5823.205   11706.410 - 1.47e-115   11707.555 - 1.63e-115   11868.775 - 5.11e-113
+JC+I              -5911.192   11874.384 - 4.93e-152   11875.246 - 6.29e-152   12015.100 - 8.6e-145
+JC+G4             -5917.319   11886.639 - 1.08e-154   11887.501 - 1.37e-154   12027.355 - 1.88e-147
+JC+I+G4           -5916.575   11887.150 - 8.33e-155   11888.078 - 1.03e-154   12033.278 - 9.71e-149
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+I
+
+Rate parameter R:
+
+  A-C: 4.6539
+  A-G: 8.0725
+  A-T: 4.6539
+  C-G: 1.0000
+  C-T: 27.2320
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3379
+  pi(C) = 0.2517
+  pi(G) = 0.162
+  pi(T) = 0.2484
+
+Rate matrix Q:
+
+  A   -0.6035    0.1944    0.2171    0.1919
+  C     0.261    -1.411    0.0269     1.123
+  G    0.4528   0.04178   -0.5358   0.04124
+  T     0.261     1.138    0.0269    -1.426
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.5137
+
+ Category  Relative_rate  Proportion
+  0         0              0.5137
+  1         2.056          0.4863
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5557.3494 (s.e. 107.8391)
+Unconstrained log-likelihood (without tree): -7650.9910
+Number of free parameters (#branches + #model parameters): 32
+Akaike information criterion (AIC) score: 11178.6988
+Corrected Akaike information criterion (AICc) score: 11180.0001
+Bayesian information criterion (BIC) score: 11351.8880
+
+Total tree length (sum of branch lengths): 0.8577
+Sum of internal branch lengths: 0.5456 (63.6116% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'DHMECN19308_Pristimantis_sp' is drawn at root
+
++-----------------------DHMECN19308_Pristimantis_sp
+|
+|                            +--DHMECN19363_Pristimantis_sp
++----------------------------|
+|                            +--DHMECN19363_Pristimantis_sp1
+|
+|                                     +--DHMECN19309_Pristimantis_sp
+|        +----------------------------|
+|        |                            |     +--DHMECN19306_Pristimantis_cf_tamiai
+|        |                            |  +--|
+|        |                            |  |  +--DHMECN19306_Pristimantis_cf_tamia
+|        |                            +--|
+|        |                               +--DHMECN19309_Pristimantis_sp1
+|    +---|
+|    |   |         +--------------------------------------Pristimantis_vanadise_voucher_SBH268524
+|    |   +---------|
+|    |             |                       +--DHMECN19300_Pristimantis_mallii
+|    |             +-----------------------|
+|    |                                     +**DHMECN19300_Pristimantis_malliii
++----|
+     |                 +--DHMECN19290_Pristimantis_cf_incomptus_1
+     +-----------------|
+                       |  +--DHMECN19290_Pristimantis_cf_incomptus
+                       +**|
+                          |  +**DHMECN19292_Pristimantis_sp_grp_incomptus
+                          +--|
+                             +--DHMECN19305_Pristimantis_tamia
+
+Tree in newick format:
+
+(DHMECN19308_Pristimantis_sp:0.1074696196,(DHMECN19363_Pristimantis_sp:0.0014882564,DHMECN19363_Pristimantis_sp1:0.0009476524):0.1293084134,(((DHMECN19309_Pristimantis_sp:0.0082762926,((DHMECN19306_Pristimantis_cf_tamiai:0.0040272386,DHMECN19306_Pristimantis_cf_tamia:0.0041889570):0.0010290682,DHMECN19309_Pristimantis_sp1:0.0028190947):0.0015761824):0.1307230744,(Pristimantis_vanadise_voucher_SBH268524:0.1734693899,(DHMECN19300_Pristimantis_mallii:0.0027352200,DHMECN19300_Pristimantis_malliii:0.0000010000):0.1096252517):0.0458723889):0.0196743037,(DHMECN19290_Pristimantis_cf_incomptus_1:0.0035246254,(DHMECN19290_Pristimantis_cf_incomptus:0.0018653611,(DHMECN19292_Pristimantis_sp_grp_incomptus:0.0000010000,DHMECN19305_Pristimantis_tamia:0.0013068721):0.0017494007):0.0000020723):0.0816198355):0.0244461250);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t muscle_pristimantis.fasta.treefile -m "TIM2{4.65393,8.07248,27.232}+F{0.337871,0.251673,0.162039,0.248418}+I{0.513719}" --length 1656
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s muscle_pristimantis.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s muscle_pristimantis.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Jul  1 13:43:42 2025
+Total CPU time used: 1.08014 seconds (0h:0m:1s)
+Total wall-clock time used: 0.931858 seconds (0h:0m:0s)
+
